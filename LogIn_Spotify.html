@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotyfy Log in</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/3f37379a9b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+
+<style>
+
+    div.container-fluid{
+        display: flex;
+        justify-content: center;
+    }
+body > div > div > img{
+    width: 200px;
+    padding: 66px 0 0 ;
+}
+
+body > div.container-fluid.buttons > div > div.btn-FB > button{
+    width: 480px;
+    height: 48px;
+    background-color: #3e5a9b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 35px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2PX;
+
+}
+body > div.container-fluid.buttons > div > div.btn-google > button{
+    width: 480px;
+    height: 48px;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 35px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: rgb(83, 83, 83);
+    font-weight: bold;
+    letter-spacing: 2PX;
+    border-width: 3px;
+    border-color: rgb(119, 117, 117);
+
+}
+body > div.container-fluid.buttons > div > div.btn-APPLE > button{
+    width: 480px;
+    height: 48px;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 35px;
+    margin-bottom: 12px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2PX;
+}
+
+
+body > div.container > div > div:nth-child(n) > p{
+    font-weight: bold ;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 0 0px;
+
+}
+
+body > div.container > div > p{
+    font-weight: bold ;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 0 0px;
+}
+div.mail{
+   
+    justify-content: center;
+    align-items: center;
+}
+
+body > div.container{
+       
+    width: 550px;
+}
+body > div.container > div > div:nth-child(n){
+    width: 480px;
+    height: 69px;
+}
+
+
+body > div.container > div > div.input-group.mail{
+    margin: 0%;
+    padding-top: 0%;
+}
+div.textForgot{
+    color:gray;
+    text-decoration: underline  ;
+    font-size: 17px;}
+
+div.container.pt-5{
+    display: inline-block;
+    justify-content: flex-start;
+}
+body > div.container > div > div.container.pt-5 > div > div > div > button{
+    display: flex;
+    justify-self: flex-end;
+    justify-content: flex-end;
+}
+
+
+div.LogInB{
+    display: flex;
+    align-items:stretch;
+    justify-content:stretch;
+}
+
+
+body > div.container > div > div.container > div > div > div > button{
+background-color: rgb(56, 121, 56);
+width: 100%;
+height: 48px;
+border-radius: 35px;
+text-align: center;
+justify-content: center;
+display: flex;
+padding-top: 13px;
+font-weight: bold;
+padding-left: 0px;
+
+
+}
+
+body > div.container > div > div.textDont.mt-5{
+    display: flex;
+    justify-content: center;
+}
+
+
+.divider{
+    border-top: 1px solid #d9dadc;
+    display: block;
+    line-height: 1px;
+    margin-left: 20px;
+    margin-right: -20px;
+    position: relative;
+    text-align: center;
+}
+
+.divider-title{
+    letter-spacing: 2px;
+    padding: 0, 20px;
+    
+}
+
+div.boxOR{
+height: 33px;
+}
+#defaultCheck1\ {
+   width: 20px;
+   height: 20px; 
+  
+   
+}
+
+body > div:nth-child(5) > div > div.container > div > div > label{
+    font-size: 18px;
+    padding-left: 12px;
+}
+
+
+
+.custom-control-label:before{
+
+    border: solid grey; border-width: 1px;  width: 20px;
+   height: 20px; 
+   align-self: baseline;
+
+        background-color:rgb(255, 255, 255);
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+        background-color:rgb(22, 133, 77);
+        align-self: baseline;
+        border: solid grey; border-width: 1px;  width: 20px;
+   height: 20px; 
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+        border: solid grey; border-width: 1px;  width: 20px;
+        align-self: baseline;
+   height: 20px; 
+        background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='white' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+    }
+    .custom-control-input:active~.custom-control-label::before{
+        background-color:green;  width: 20px;
+   height: 20px; 
+        border: solid grey; border-width: 1px;
+        align-self: baseline;
+    }
+   
+    body > div:nth-child(5) > div.col.xs-12 > div.container > div > div.custom-control.form-control-lg.custom-checkbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        height: 35px;
+    }
+    body > div:nth-child(5) > div.col.xs-12 > div.container > div > div.custom-control.form-control-lg.custom-checkbox > label{
+        display: flex;
+        align-self:center;
+        margin-left: -5px;
+
+    }
+  /* last botton sign it  */
+  body > div:nth-child(5) > div.signUp.mb-5.d-flex.justify-content-center > button{
+    width: 480px;
+    height: 48px;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 35px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    color: rgb(83, 83, 83);
+    font-weight: bold;
+    letter-spacing: 2PX;
+    border:solid grey ;
+    border-width: 2px;
+  }
+
+/* privacy*/
+body > div:nth-child(5) > p{
+   
+   align-content: center;
+    display: flex;
+    color: grey;
+}
+div#privacy.text{
+    font-size: 11px;
+    color: grey;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+    
+
+<div class="container-fluid  ">
+<div class="img-flex">
+    <img src="https://cdn.freelogovectors.net/wp-content/uploads/2016/12/spotifiy-logo.png">
+
+</div>
+</div>
+
+
+<hr>
+
+<div class="container-fluid buttons">
+    <div class="btn">
+       <div class="btn-FB"> <button type="button" class="btn btn-secondary btn-lg"><div class="icona d-inline mr-3"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </svg></div>CONTINUE WITH FACEBOOK</button></div>
+       <div class="btn-APPLE"><button type="button" class="btn btn-secondary btn-lg"><div class="icona d-inline mr-3 z-index:2">
+      
+        <i class="fab fa-apple color:white  " ></i></div>CONTINUE WITH APPLE</button></div>
+        <div class="btn-google"><button type="button" class="btn btn-secondary btn-lg"><div class="icona d-inline mr-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+              </svg></div>CONTINUE WITH GOOGLE</button></div>
+    </div>
+</div>
+
+
+</div>
+
+<div class="container">
+    <div class="boxOR">
+<div class="col-xs-12 mt-2">
+    <div class="divider">
+        <strong class="divider-title ng-binding">OR</strong>
+
+
+
+    </div>
+    
+    
+    
+</div>
+
+    </div>
+</div>
+
+
+<div class="container "> 
+    <div class="col xs-12">
+       
+        <div class="mail">
+    <p>Email address or username </p>
+        <div class="input-group mail">
+            <div class="input-group flex-nowrap">
+                <div class="input-group-prepend">       
+        </div>
+        <input type="text" class="form-control" placeholder="Email address or username" aria-label="Email address or username" aria-describedby="addon-wrapping">
+      </div> 
+    </div></div>
+
+
+
+
+
+
+
+    <div class="mail">
+        <p>Password </p>
+            <div class="input-group mail">
+                <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">       
+            </div>
+            <input type="text" class="form-control" placeholder="Password" aria-label="Email address or username" aria-describedby="addon-wrapping">
+          </div> 
+        </div></div>
+<br>
+        <div class="textForgot  ">Forgot your password?</div>
+
+
+<br>
+
+
+<div class="container ">
+    <div class="row">
+        <div class="custom-control form-control-lg custom-checkbox"  >
+           <input type="checkbox" class="custom-control-input" id="customCheck1">  
+    <label class="custom-control-label " for="customCheck1">Remember me</label>  
+        </div>
+    
+    <div class="col xs-6 md-4 lg-3">    
+    <div class="LogInB">
+ <button type="button-block" class="btn btn-success">LOG IN</button></div>
+
+    
+</div>
+
+   
+    
+    </div>
+    
+    </div>   
+    
+    </div>
+   
+    
+        
+ 
+
+
+<hr>
+<div class="textDont mt-5 mb-1 d-flex justify-content-center"><h5><b>Don't have an account?</b></h5></div>
+<div class="signUp mb-5 d-flex justify-content-center"><button type="button" class="btn btn-outline-secondary ">SIGN UP FOR SPOTIFY</button></div>
+
+
+<hr>
+<div class="text d-inline-block" id="privacy">If you click "Log in with Facebook" and are not a Spotify user, you will be registered and <br> you agree to Spotify's <a target="blank" href="https://www.spotify.com/uk/legal/end-user-agreement/">Terms & Conditions</a> and <a target="blank" href="=https://www.spotify.com/us/legal/privacy-policy/">  Privacy Policy. </a> </div>
+
+
+
+
+</body>
+</html>
